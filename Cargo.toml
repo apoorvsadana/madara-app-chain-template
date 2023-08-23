@@ -2,7 +2,6 @@
 members = [
   "crates/node",
   "crates/runtime",
-  "crates/pallets/template",
 ]
 
 [profile.release]

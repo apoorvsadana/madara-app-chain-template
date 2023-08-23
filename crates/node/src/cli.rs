@@ -15,7 +15,7 @@ pub enum Sealing {
 /// Available testnets.
 #[derive(Debug, Copy, Clone, PartialEq, clap::ValueEnum)]
 pub enum Testnet {
-    Sharingan,
+    Pragma,
 }
 
 #[derive(Debug, clap::Parser)]

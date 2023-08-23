@@ -103,7 +103,7 @@ pub fn run() -> sc_cli::Result<()> {
     for file in constants::CAIRO_CONTRACTS_FILES {
         let src_path = utils::get_project_path();
         if let Ok(src_path) = src_path {
-            let src_path = src_path + "/configs/cairo-contracts/" + file;
+            let src_path = src_path + file;
             utils::copy_from_filesystem(src_path, madara_path.clone() + "/cairo-contracts")?;
         } else {
             utils::fetch_from_url(
@@ -253,19 +253,19 @@ pub fn run() -> sc_cli::Result<()> {
             cli.run.run_cmd.network_params.node_key_params.node_key_file =
                 Some((madara_path.clone() + "/p2p-key.ed25519").into());
 
-            if let Some(Testnet::Sharingan) = cli.run.testnet {
+            if let Some(Testnet::Pragma) = cli.run.testnet {
                 let src_path = utils::get_project_path();
                 if let Ok(src_path) = src_path {
-                    let src_path = src_path + "/configs/chain-specs/testnet-sharingan-raw.json";
+                    let src_path = src_path + "/configs/chain-specs/pragma-testnet.json";
                     utils::copy_from_filesystem(src_path, madara_path.clone() + "/chain-specs")?;
                 } else {
                     utils::fetch_from_url(
-                        constants::SHARINGAN_CHAIN_SPEC_URL.to_string(),
+                        constants::PRAGMA_CHAIN_SPEC_URL.to_string(),
                         madara_path.clone() + "/chain-specs",
                     )?;
                 }
 
-                cli.run.run_cmd.shared_params.chain = Some(madara_path + "/chain-specs/testnet-sharingan-raw.json");
+                cli.run.run_cmd.shared_params.chain = Some(madara_path + "/chain-specs/pragma-testnet.json");
 
                 // This should go apply to all testnets when applying a match pattern
                 cli.run.run_cmd.rpc_external = true;
