@@ -43,6 +43,10 @@
     {
       "name": "UniversalDeployer.json",
       "md5": "d917baa8b1455f946d095d467dcdba47"
+    },
+    {
+      "name": "OtpAccount.casm.json",
+      "md5": "e368e8b57cfab2bb57cffd0846350a01"
     }
   ]
 }

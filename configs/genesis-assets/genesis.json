@@ -30,6 +30,7 @@
     ],
     ["0x10000", { "path": "genesis-assets/ERC20.json", "version": 0 }],
     ["0x80000", { "path": "genesis-assets/ERC721.json", "version": 0 }],
+    ["0x02b1f3e75aa04a70c994f9551761c96256eebed3a7bd13425ec9f63843ba0224", { "path": "genesis-assets/OtpAccount.casm.json", "version": 1 }],
     [
       "0x90000",
       {
@@ -70,6 +71,10 @@
     [
       "0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf",
       "0x90000"
+    ],
+    [
+      "0x5",
+      "0x02b1f3e75aa04a70c994f9551761c96256eebed3a7bd13425ec9f63843ba0224"
     ]
   ],
   "storage": [
@@ -128,6 +133,20 @@
         "0x1d8bbc4f93f5ab9858f6c0c0de2769599fb97511503d5bf2872ef6846f21470"
       ],
       "0xffffffffffffffffffffffffffffffff"
+    ],
+    [
+      [
+        "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+        "0x40795dc9acd6d37d07ba939bbafe8ff2d0a9b78de88db2c74b4eb57d757c0eb"
+      ],
+      "0x5f5e100"
+    ],
+    [
+      [
+        "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
+        "0x341c1bdfd89f69748aa00b5742b03adbffd79b8e80cab5c50d91cd8c2a79be1"
+      ],
+      "0x455448"
     ],
     [
       [
